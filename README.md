@@ -67,7 +67,7 @@ curl --request POST \
 Github Users - use comma to separate username(s)
 ```bash
 curl --request GET \
-  --url 'http://kumu-php-api.test/api/github/jarabino,mojombo,defunkt' \
+  --url '{BASE_URL}/api/github/jarabino,mojombo,defunkt' \
   --header 'Accept: application/json' \
   --header 'Authorization: Bearer {TOKEN}'
 ```
