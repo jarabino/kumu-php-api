@@ -29,6 +29,9 @@ CREATE DATABASE {Database_name};
 # Migrate database
 - php artisan migrate
 
+# install passport key
+- php artisan passport:install
+
 ```
 
 ## API Endpoints
