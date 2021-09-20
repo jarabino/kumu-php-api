@@ -72,5 +72,3 @@ curl --request POST \
     "names": "jarabino,mojombo,defunkt"
 }'
 ```
-### Premium Partners
-
