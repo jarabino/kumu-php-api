@@ -4,15 +4,33 @@ This project is developed using Laravel Framework 8.5. The goal of this project 
 
 For Laravel framework [documentation](https://laravel.com/docs).
 ## System Requirement 
+```
 REDIS
 MySql
 PHP : "^7.3|^8.0",
+```
 
 ## Installation 
-Clone Project from Git Repository
-```bash
+```
+# Clone Project from Git Repository
+- git clone git@github.com:jarabino/kumu-php-api.git
+
+# Install Package using composer
+- composer install
+
+# Make a copy of .env.example to .env
+- cp  .env.example .env
+
+# Create Database
+CREATE DATABASE {Database_name};
+
+# Add database and user to env
+
+# Migrate database
+- php artisan migrate
 
 ```
+
 ## API Endpoints
 | Request Type | URI | Description|
 | ------ | ------ | ------ |
@@ -21,7 +39,7 @@ Clone Project from Git Repository
 | POST | /api/github/users | username(s) can be separated by comma 
 
 ## Curl
-Login Endpoint - 
+Login Endpoint
 ```bash
 curl --request POST \
   --url {BASE_URL}/api/login \
