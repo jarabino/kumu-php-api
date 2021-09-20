@@ -16,5 +16,5 @@ use App\Http\Controllers\AuthController;
 */
 Route::post('login', [AuthController::class, 'login']);
 Route::post('register', [AuthController::class, 'register']);
-Route::middleware('auth:api')->post('/github/users', [githubApiController::class, 'users']);
+Route::middleware('auth:api')->get('/github/{usernames}', [githubApiController::class, 'users']);
 Route::middleware('auth:api')->get('/logout', [AuthController::class, 'logout']);

@@ -10,10 +10,10 @@ use Illuminate\Support\Facades\Cache;
 class githubApiController extends Controller
 {
     
-    public function users(Request $request) 
+    public function users($usernames) 
     {
-        /* get names from request */
-        $usernames = explode(',', request('names'));
+        /* get names from uri */
+        $usernames = explode(',', $usernames);
         $usernames = array_slice($usernames, 0, 10);
         /* Set the base URL  */
         $http = Http::baseUrl('https://api.github.com/users/');
